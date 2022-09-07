@@ -22,7 +22,7 @@ export default function Catalog(props) {
                 })
         }
         else{
-            fetch(isDev ? 'http://localhost:4000/api/v1/Catalog/items' : 'https://eshop-swa.azure-api.net/api/v1/Catalog/items')
+            fetch(isDev ? 'http://localhost:4000/api/v1/Catalog/items' : '/api/v1/Catalog/items')
                 .then((res) => res.json())
                 .then((data) => {
                     setItems(data);
