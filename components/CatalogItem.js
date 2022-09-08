@@ -13,11 +13,13 @@ var isDev = process.env.NODE_ENV == "development"
 
 export default function CatalogItem({ CatalogItem }) {
   return (
-    <div style={{width: "16rem", height: "18rem", padding: "1em"}}>
-        <img src={CatalogItem.pictureUri} height={"100%"} width={"100%"}></img>
-        <div style={{display: "flex", justifyContent: "space-between"}}>
+    <div style={{padding: "1em"}}>
+        <div style={{width: "15rem", height: "16rem", position: "relative"}}>
+          <img src={CatalogItem.pictureUri} height={"100%"} width={"100%"} style={{objectFit:"cover"}}></img>
+        </div>
+        <div style={{display: "flex", justifyContent: "space-between", margin: "1em", fontSize:"1.2em"}}>
             <div>{CatalogItem.name}</div>
-            <div>{formatter.format(CatalogItem.price)}</div>
+            <div style={{color:"#f66f61"}}>{formatter.format(CatalogItem.price)}</div>
         </div>
     </div>
   )

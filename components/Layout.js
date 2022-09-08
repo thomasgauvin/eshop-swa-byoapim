@@ -37,7 +37,7 @@ export default function Layout({children}) {
                     </section>
 
                     <section>
-                        © e-Shoponcontainers. All rights reserved
+                    © Contoso e-Shop. All rights reserved
                     </section>
 
                 </article>
