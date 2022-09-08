@@ -63,6 +63,10 @@
         height: 7rem;
         margin-top: auto;
 
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+
         &-brand {
             height: auto;
             width: 104px;
