@@ -3,7 +3,7 @@ import styles from "../styles/Catalog.module.scss";
 
 export default function Layout({children}) {
   return (
-    <div>
+    <div className={styles["footer-at-bottom"]}>
         <header className={styles["esh-app-header"]}>
             <div className={styles["container"]}>
                 <article className={styles["d-flex align-content-center justify-content-between"]}>

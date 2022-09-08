@@ -61,11 +61,8 @@
         font-size: $font-size-m;
         display: flex;
         height: 7rem;
-        margin-top: auto;
 
-        position: fixed;
-        bottom: 0;
-        width: 100%;
+        margin-top: 4em;
 
         &-brand {
             height: auto;
@@ -85,5 +82,12 @@
 .item-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-at-bottom{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
