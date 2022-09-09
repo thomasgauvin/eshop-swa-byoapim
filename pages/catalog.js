@@ -41,13 +41,13 @@ export default function Catalog(props) {
                 <div className={styles["container"]}>
                     <div className={`${styles["esh-catalog-filters-wrapper"]} ${styles["d-flex"]} align-items-end ${styles["mt-3"]}`}>
                         <div className={styles["esh-catalog-filter-wrapper"]}>
-                            <label className={`$styles["esh-catalog-label"] ${styles["form-label"]}`} for="brand">Brand</label>
+                            <label className={`$styles["esh-catalog-label"] ${styles["form-label"]}`}>Brand</label>
                             <select className={`${styles["form-control"]}`} id="brand" >
                                 <option>All</option>
                             </select>
                         </div>
                         <div className={styles["esh-catalog-filter-wrapper"]}>
-                            <label className={`$styles["esh-catalog-label"] ${styles["form-label"]}`} for="type">Type</label>
+                            <label className={`$styles["esh-catalog-label"] ${styles["form-label"]}`}>Type</label>
                             <select className={`${styles["form-control"]}`} id="type">
                                 <option >All</option>
                             </select>
