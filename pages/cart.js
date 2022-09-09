@@ -4,14 +4,13 @@ import Layout from "../components/Layout";
 import { useEffect, useState } from 'react';
 import CatalogItem from '../components/CatalogItem';
 
-var isDev = process.env.NODE_ENV == "development"
 
 export default function Catalog(props) {
 
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetch('/api/v1/Catalog/items')
+        fetch('/api/v1/Catalog/cart')
             .then((res) => res.json())
             .then((data) => {
                 setItems(data);
